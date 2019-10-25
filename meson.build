@@ -18,5 +18,5 @@ src_files = [
 
 executable('sent', sources: src_files,
            dependencies: [x11_dep, xft_dep, freetype_dep, fontconf_dep, m_dep],
-           install: true, install_dir: '/usr/bin')
+           install: true)
 install_man('sent.1')
