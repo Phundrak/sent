@@ -1,4 +1,5 @@
 /* See LICENSE file for copyright and license details. */
+#include <X11/Xft/Xft.h>
 
 static char *fontfallbacks[] = {
 	"dejavu sans",
