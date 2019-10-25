@@ -21,6 +21,7 @@
 #include "arg.h"
 #include "drw.h"
 #include "util.h"
+#include "utf8.h"
 
 char *argv0;
 
