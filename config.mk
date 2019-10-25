@@ -20,11 +20,11 @@ LIBS = -L/usr/lib -lc -lm -L${X11LIB} -lXft -lfontconfig -lX11
 #LIBS = -L/usr/local/lib -lc -lm -L${X11LIB} -lXft -lfontconfig -lX11
 
 # flags
-CPPFLAGS = -DVERSION=\"${VERSION}\" -D_XOPEN_SOURCE=600
+CPPFLAGS = -DVERSION=\"${VERSION}\" -D_XOPEN_SOURCE=600 -Wall -Wextra -O2 -flto
 CFLAGS += -g -std=c99 -pedantic -Wall ${INCS} ${CPPFLAGS}
 LDFLAGS += -g ${LIBS}
 #CFLAGS += -std=c99 -pedantic -Wall -Os ${INCS} ${CPPFLAGS}
 #LDFLAGS += ${LIBS}
 
 # compiler and linker
-CC ?= cc
+CC ?= gcc

@@ -26,6 +26,7 @@ ${OBJ}: config.h config.mk
 sent: ${OBJ}
 	@echo CC -o $@
 	@${CC} -o $@ ${OBJ} ${LDFLAGS}
+	@strip -s $@
 
 cscope: ${SRC} config.h
 	@echo cScope
